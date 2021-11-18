@@ -10,7 +10,6 @@ set(CMAKE_CXX_FLAGS "-Wall -Wextra -pedantic -std=c++11")
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  sam_msgs
   geometry_msgs
   roscpp
   sensor_msgs
@@ -22,12 +21,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 ## Generate messages in the 'msg' folder
 add_message_files(
-  FILES
-  UavcanNodeStatus.msg
-  UavcanNodeStatusNamed.msg
-  UavcanNodeStatusNamedArray.msg
-  ESCStatus.msg
-  CircuitStatus.msg
+  DIRECTORY msg
 )
 
 ## Generate services in the 'srv' folder
@@ -42,6 +36,8 @@ add_service_files(
 generate_messages(
   DEPENDENCIES
   std_msgs
+  sensor_msgs
+  geometry_msgs
 )
 
 ###################################

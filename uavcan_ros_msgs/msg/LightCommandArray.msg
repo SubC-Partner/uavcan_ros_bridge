@@ -1,0 +1,5 @@
+#
+# Light command
+#
+
+LightCommand[] array

@@ -1,1 +1,1 @@
-uavcan_ros_msgs/UavcanNodeStatusNamed[] array
+UavcanNodeStatusNamed[] array

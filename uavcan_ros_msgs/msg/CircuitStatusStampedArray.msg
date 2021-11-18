@@ -1,0 +1,4 @@
+#
+# Uavcan CircuitStatus
+#
+CircuitStatusStamped[] array

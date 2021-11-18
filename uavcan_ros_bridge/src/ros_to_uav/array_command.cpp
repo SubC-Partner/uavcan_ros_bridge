@@ -3,7 +3,7 @@
 namespace ros_to_uav {
 
 template <>
-bool convert(const sam_msgs::ArrayCommand& ros_msg, uavcan::equipment::actuator::ArrayCommand& uav_msg)
+bool convert(const uavcan_ros_msgs::ArrayCommand& ros_msg, uavcan::equipment::actuator::ArrayCommand& uav_msg)
 {
     uav_msg.commands.resize(ros_msg.commands.size());
     for (int i = 0; i < ros_msg.commands.size(); ++i) {
