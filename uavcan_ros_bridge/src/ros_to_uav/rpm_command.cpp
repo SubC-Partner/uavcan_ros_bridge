@@ -10,4 +10,12 @@ bool convert(const std_msgs::Int32& ros_msg, uavcan::equipment::esc::RPMCommand&
     return true;
 }
 
+template <>
+bool convert(const acomar_thruster::ThrusterCmd& ros_msg, uavcan::equipment::esc::RPMCommand& uav_msg)
+{
+    uav_msg.rpm.resize(1);
+    uav_msg.rpm[0] = ros_msg.data*3000; //TODO: Parameterize this
+    return true;
+}
+
 }

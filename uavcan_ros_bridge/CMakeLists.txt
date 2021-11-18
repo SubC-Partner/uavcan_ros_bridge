@@ -18,6 +18,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   message_runtime
   uavcan_ros_msgs
+  acomar_thruster
 )
 
 #find_library(UAVCAN_LIB uavcan libuavcan_dsdlc REQUIRED)

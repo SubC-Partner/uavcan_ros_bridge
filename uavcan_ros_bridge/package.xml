@@ -57,6 +57,7 @@
   <build_depend>python-dev</build_depend>
   <build_depend>uavcan-pip</build_depend>
   <build_depend>uavcan_ros_msgs</build_depend>
+  <build_depend>acomar_thruster</build_depend>
   <build_export_depend>geometry_msgs</build_export_depend>
   <build_export_depend>roscpp</build_export_depend>
   <build_export_depend>sensor_msgs</build_export_depend>
