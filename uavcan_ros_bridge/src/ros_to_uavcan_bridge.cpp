@@ -52,14 +52,14 @@ int main(int argc, char** argv)
 
     ros::NodeHandle pn("~");
     ros_to_uav::ConversionServer<uavcan::equipment::actuator::ArrayCommand, std_msgs::Float32> command_server(uav_node, pn, "command");
-    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterCmd> rpm_server0(uav_node, pn, "thruster/t0/input", 106);
-    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterCmd> rpm_server1(uav_node, pn, "thruster/t1/input", 107);
-    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterCmd> rpm_server2(uav_node, pn, "thruster/t2/input", 108);
-    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterCmd> rpm_server3(uav_node, pn, "thruster/t3/input", 109);
-    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterCmd> rpm_server4(uav_node, pn, "thruster/t4/input", 110);
-    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterCmd> rpm_server5(uav_node, pn, "thruster/t5/input", 111);
-    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterCmd> rpm_server6(uav_node, pn, "thruster/t6/input", 112);
-    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterCmd> rpm_server7(uav_node, pn, "thruster/t7/input", 113);
+    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterCmd> rpm_server0(uav_node, pn, "thruster/0/input", 106);
+    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterCmd> rpm_server1(uav_node, pn, "thruster/1/input", 107);
+    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterCmd> rpm_server2(uav_node, pn, "thruster/2/input", 108);
+    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterCmd> rpm_server3(uav_node, pn, "thruster/3/input", 109);
+    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterCmd> rpm_server4(uav_node, pn, "thruster/4/input", 110);
+    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterCmd> rpm_server5(uav_node, pn, "thruster/5/input", 111);
+    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterCmd> rpm_server6(uav_node, pn, "thruster/6/input", 112);
+    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterCmd> rpm_server7(uav_node, pn, "thruster/7/input", 113);
     /*
     ros_to_uav::ConversionServer<uavcan::equipment::actuator::ArrayCommand, sam_msgs::ArrayCommand> array_server(uav_node, pn, "array_command");
     ros_to_uav::ConversionServer<uavcan::equipment::actuator::ArrayCommand, sam_msgs::PercentStamped> vbs_server(uav_node, pn, "vbs_command", 13);
