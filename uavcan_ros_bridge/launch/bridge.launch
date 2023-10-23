@@ -7,16 +7,6 @@
   <node name="ros_to_uavcan_bridge_node" pkg="uavcan_ros_bridge" type="ros_to_uavcan_bridge" respawn="true" output="screen">
     <param name="uav_node_id" value="$(arg subscriber_uav_node_id)"/>
     <param name="uav_can_interface" value="$(arg uav_can_interface)"/>
-    <remap from="~/thruster/0/input" to="thruster/t0/input"/>
-    <remap from="~/thruster/1/input" to="thruster/t1/input"/>
-    <remap from="~/thruster/2/input" to="thruster/t2/input"/>
-    <remap from="~/thruster/3/input" to="thruster/t3/input"/>
-    <remap from="~/thruster/4/input" to="thruster/t4/input"/>
-    <remap from="~/thruster/5/input" to="thruster/t5/input"/>
-    <remap from="~/thruster/6/input" to="thruster/t6/input"/>
-    <remap from="~/thruster/7/input" to="thruster/t7/input"/>
-    <remap from="~/thruster/8/input" to="thruster/t8/input"/>
-    <remap from="~/thruster/9/input" to="thruster/t9/input"/>
     <remap from="~command" to="uavcan_command"/>
     <remap from="~array_command" to="uavcan_array_command"/>
     <remap from="~vbs_command" to="uavcan_vbs_command"/>
