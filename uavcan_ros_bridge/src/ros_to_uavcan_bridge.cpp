@@ -52,7 +52,7 @@ int main(int argc, char** argv)
 
     ros::NodeHandle pn("~");
     ros_to_uav::ConversionServer<uavcan::equipment::actuator::ArrayCommand, std_msgs::Float32> command_server(uav_node, pn, "command");
-    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterArray> rpm_server(uav_node, pn, "thrusters/array/input", 106);
+    ros_to_uav::ConversionServer<uavcan::equipment::esc::RPMCommand, acomar_thruster::ThrusterArray> rpm_server(uav_node, pn, "thruster/array/input", 106);
 
     /*
     ros_to_uav::ConversionServer<uavcan::equipment::actuator::ArrayCommand, sam_msgs::ArrayCommand> array_server(uav_node, pn, "array_command");

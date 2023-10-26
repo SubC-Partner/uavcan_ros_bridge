@@ -14,7 +14,7 @@ template <>
 bool convert(const std_msgs::Int32& ros_msg, uavcan::equipment::esc::RPMCommand& uav_msg);
 
 template <>
-bool convert(const acomar_thruster::ThrusterArray& ros_msg, uavcan::equipment::esc::RPMCommand& uav_msg,  unsigned char uid);
+bool convert(const acomar_thruster::ThrusterArray& ros_msg, uavcan::equipment::esc::RPMCommand& uav_msg);
 }
 
 #endif // ROS_TO_UAV_RPM_COMMAND_H
